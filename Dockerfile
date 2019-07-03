@@ -50,6 +50,7 @@ RUN apt-get install -y     autoconf                                       \
         devscripts                                     \
         gdb                                            \
         git-core                                       \
+        git-lfs \
         libtool                                        \
         llvm                                           \
         mercurial                                      \
