@@ -1,8 +1,8 @@
-FROM buildpack-deps:18.04
+FROM ubuntu:xenial
 
 RUN apt-get -y update && apt-get -y upgrade 
 
-RUN apt-get install -y libc6-dev-i386 libc6-i386 unzip
+RUN apt-get install -y libc6-dev-i386 libc6-i386 unzip  build-essential curl
 
 # Install java
 COPY GetJava8.sh /tmp/GetJava8.sh
